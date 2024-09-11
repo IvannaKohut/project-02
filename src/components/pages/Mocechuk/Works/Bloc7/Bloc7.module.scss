@@ -1,0 +1,10 @@
+.bloc_7{
+  display: grid;
+  grid-template: 1fr/1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  padding-bottom: 100px;
+  @media (max-width: 764px) {
+    grid-template: 2fr/1fr 1fr;
+    row-gap: 20px;
+  }
+}

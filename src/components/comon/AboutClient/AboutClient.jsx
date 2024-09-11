@@ -1,16 +1,13 @@
 import React from "react";
+import c from "./AboutClient.module.scss"
 
 
-const AboutClient = () => {
+const AboutClient = (props) => {
     return (
-        <div>
-            <div>
-                <div className={c.title}>Про клієнта</div>
-                <div className={c.text}></div>
+            <div className={c.container}>
+                <div className={c.title}>{props.title}</div>
+                <div className={c.text} dangerouslySetInnerHTML={{__html: props.text}}></div>
             </div>
-            <div></div>
-            <div></div>
-        </div>
     )
 }
 export default AboutClient;

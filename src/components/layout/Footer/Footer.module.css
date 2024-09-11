@@ -1,0 +1,7 @@
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-template: 1fr /  minmax(auto,700px) minmax(auto, 700px);
+  margin: 24px 0;
+
+}

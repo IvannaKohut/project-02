@@ -1,0 +1,15 @@
+.title{
+  //styleName: Тitle Medium;
+  font-family: var(--FontFamilyfontFamily-HelveticaNeue);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: var(--LineHeightH3);
+  letter-spacing: -1px;
+  text-align: left;
+  padding-bottom: 50px;
+  @media (max-width: 1024px) {
+    font-size: 40px;
+    line-height: 41px;
+  }
+
+}

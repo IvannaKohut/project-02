@@ -1,0 +1,17 @@
+.text{
+  //styleName: Paragraph Medium;
+  font-family: var(--FontFamilyfontFamily-HelveticaNeue);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  text-align: left;
+padding-bottom: 50px;
+  @media (max-width: 1024px) {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  @media (max-width: 764px) {
+    font-size: 17px;
+    line-height: 20px;
+  }
+}

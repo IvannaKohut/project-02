@@ -1,23 +1,45 @@
-
 import './App.css';
-import React from "react";
+import React, {useEffect} from "react";
+import {useLayoutEffect} from "react";
+import MainLayout from "./components/layout/MainLayout/MainLayout";
+import AboutMe from "./components/pages/About me/AboutMe";
+import Blog from "./components/pages/Blog/Blog";
+import {BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
+import Mocechuk from "./components/pages/Mocechuk/Mocechuk";
+import Work from "./components/pages/Work/Work";
+import Client from "./components/pages/Work/Client/Client";
+import Contact from "./components/pages/Contact/Contact";
+
+
+const Wrapper = ({children}) => {
+    const location = useLocation();
+    useLayoutEffect(() => {
+        document.documentElement.scrollTo(0, 0);
+    }, [location.pathname]);
+    return children
+}
+
+
 
 const App = (props) => {
-  return (<BrowserRouter>
-        <MainLayout>
-          <Routes>
-            <Route path='/profile' element={<ProfileContainer/>}>
-              <Route path=':userId' element={<ProfileContainer/>}/>
-            </Route>
-            <Route path='/dialogs' element={<DialogsContainer/>}/>
-            <Route path='/news' element={<NewsContainer/>}/>
-            <Route path='/settings' element={<SettingsContainer/>}/>
-            <Route path='/users' element={<UsersContainer/>}/>
-            <Route path='/login' element={<LoginPage/>}/>
-          </Routes>
-        </MainLayout>
-      </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <Wrapper>
+                <MainLayout>
+                    <Routes path="/">
+                        <Route path="work" element={<Work/>}/>
+                        <Route path="work/:id" element={<Client/>}/>
+                        <Route path="logo" element={<Mocechuk/>}/>
+                        <Route path="aboutme" element={<AboutMe/>}/>
+                        <Route path="blog" element={<Blog/>}/>
+                        <Route path="contacts" element={<Contact/>}/>
+                        {/*<Route path="client" element={<Client/>}/>*/}
+
+                    </Routes>
+                </MainLayout>
+            </Wrapper>
+        </BrowserRouter>
+    )
 }
 
 export default App;

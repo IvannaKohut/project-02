@@ -1,0 +1,42 @@
+.item{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  margin-bottom: 8px;
+}
+.author{
+  color: #A5A5A5;
+}
+
+.date{
+  color: black;
+  font-size: 15px;
+  @media (max-width: 765px) {
+    font-size: 16px;
+  }
+}
+
+.info{
+  color: #A5A5A5;
+  @media (max-width: 765px) {
+    font-size: 14px;
+  }
+}
+.awards{
+  color: #1E1E1E;
+}
+.text{
+  color: #1E1E1E;
+}
+
+.informative_blog{
+  @media (max-width: 1380px) {
+
+  }
+  @media (max-width: 1245px) {
+
+  }
+  @media (max-width: 1090px) {
+
+  }
+}

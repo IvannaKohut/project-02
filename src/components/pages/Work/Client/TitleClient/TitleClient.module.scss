@@ -1,7 +1,7 @@
 .title{
   display: grid;
   grid-template: 1fr/2fr 3fr 1fr;
-  @media (max-width: 1024px) {
+  @media (max-width: 764px) {
     grid-template: 3fr/ 1fr;
   }
 }
@@ -15,7 +15,7 @@
   text-align: left;
   text-decoration: none;
   color: #1E1E1E;
-  @media (max-width: 1024px) {
+  @media (max-width: 764px) {
     font-size: 14px;
   }
 
@@ -27,33 +27,8 @@
   font-weight: 400;
   line-height: 117px;
   text-align: left;
-  @media (max-width: 1024px) {
+  @media (max-width: 764px) {
     font-size: 46px;
   }
 
-}
-.button{
-  display: grid;
-  justify-items: start;
-  //styleName: Paragraph Small;
-  //styleName: Paragraph Small;
-  font-family: var(--FontFamilyfontFamily-HelveticaNeue);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.09px;
-  letter-spacing: -0.49799999594688416px;
-  text-align: left;
-  color: #A5A5A5;
-}
-.active{
-  color: #1E1E1E;
-}
-.item{
-padding-bottom: 20px;
-}
-.item_1 {
-  padding-bottom: 40px;
-}
-.element{
-  color: #1E1E1E;
 }

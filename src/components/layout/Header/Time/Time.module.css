@@ -1,0 +1,5 @@
+.time{
+    width: 20px;
+    height: 20px;
+    background-image: radial-gradient(silver 0%, silver 70%, transparent 70%);
+}

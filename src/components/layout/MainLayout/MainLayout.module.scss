@@ -1,21 +1,35 @@
 .appWrapper {
-    display: grid;
-    min-height: 100%;
-    grid-template:minmax(91px, auto) 1fr minmax(89px, auto)/1fr;
-    grid-template-areas:
-"header"
-"pages"
-"footer";
+//    display: grid;
+//    min-height: 100%;
+//  // grid-template:minmax(91px, auto) 1fr minmax(89px, auto)/1fr;
+//    grid-template-areas:
+//'header'
+//'pages'
+//'footer';
 
 }
 
 .container{
-    max-width: 1400px ;
+    max-width: 1400px;
     padding: 0 25px;
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
 
 }
 
 .appWrapperContent {
     grid-area: pages;
 
+}
+.mobileHeader{
+    display: none;
+    @media (max-width: 764px) {
+        display: block;
+    }
+}
+.header{
+    @media (max-width: 764px) {
+        display: none;
+    }
 }

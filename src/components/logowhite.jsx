@@ -1,3 +1,4 @@
+import React from "react";
 const Icon2 =(props)=>{
     return <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="116" height="26" viewBox="0 0 116 26" fill="none">

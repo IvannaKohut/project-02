@@ -1,0 +1,12 @@
+.file{
+
+}
+.download{
+    display: flex;
+}
+.text{
+    margin-bottom: 5px;
+}
+.old_file{
+    margin:  0 0 0 6px;
+}

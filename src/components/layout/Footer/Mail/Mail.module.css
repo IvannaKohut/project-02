@@ -1,0 +1,12 @@
+.mail{
+    display: grid;
+    justify-items: end;
+
+}
+
+.contact{
+margin: 0 112px 0 5px;
+}
+.address{
+ color: silver;
+}

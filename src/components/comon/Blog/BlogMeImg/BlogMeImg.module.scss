@@ -1,0 +1,24 @@
+img{
+padding: 0;
+  width: 100%;
+}
+.text{
+  //styleName: Caption Medium;
+  font-family: var(--FontFamilyfontFamily-HelveticaNeue);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: var(--LineHeightCaptionlarge);
+  letter-spacing: -0.5320000052452087px;
+  text-align: left;
+  @media (max-width: 1024px) {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+.image{
+
+}

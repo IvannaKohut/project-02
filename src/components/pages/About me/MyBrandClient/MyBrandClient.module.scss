@@ -1,0 +1,31 @@
+.container{
+  border-top: 1px solid #A5A5A5 ;
+  margin-top: 15px;
+
+}
+.name{
+  display: grid;
+  grid-template: 1fr/2fr 1fr;
+  border-top: 1px ;
+
+
+
+  @media (max-width: 764px) {
+    grid-template: 1fr/1fr;
+  }
+}
+.name_item{
+  grid-column: 2/3;
+  //styleName: Тitle Small;
+  font-family: var(--FontFamilyfontFamily-HelveticaNeue);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.25px;
+  letter-spacing: -1.0420000553131104px;
+  text-align: left;
+
+  @media (max-width: 764px) {
+    grid-column: auto;
+  }
+
+}

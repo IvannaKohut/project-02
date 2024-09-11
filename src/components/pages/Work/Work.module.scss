@@ -1,0 +1,119 @@
+.content {
+
+  padding-bottom: 100px;
+  width: 100%;
+
+}
+
+.filters {
+
+    padding-bottom: 20px;
+    overflow: scroll;
+    white-space: nowrap;
+    display: flex;
+
+
+
+}
+
+.filterWrapper {
+
+
+
+
+}
+
+
+.button {
+  margin-right: 6px;
+  height: 46px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #A5A5A5;
+  //styleName: Caption Medium;
+  font-family: var(--FontFamilyfontFamily-HelveticaNeue);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: var(--LineHeightCaptionlarge);
+  letter-spacing: -0.5320000052452087px;
+  text-align: left;
+  color: #A5A5A5;
+  background-color: #FFFFFF;
+  cursor: pointer;
+
+  @media (max-width: 1512px) {
+    font-size: 13px;
+  }
+  @media (max-width: 1512px) {
+    font-size: 13px;
+  }
+}
+
+.active {
+  margin-right: 6px;
+  padding: 10px 20px 10px 20px;
+  gap: 10px;
+  border-radius: 25px;
+  border: 1px solid #A5A5A5;
+  height: 46px;
+  background-color: var(--sys-Primary, #1E1E1E);
+  color: #A5A5A5;
+
+
+  //styleName: Caption Medium;
+  font-family: var(--FontFamilyfontFamily-HelveticaNeue);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: var(--LineHeightCaptionlarge);
+  letter-spacing: -0.5320000052452087px;
+  text-align: left;
+  @media (max-width: 1512px) {
+    font-size: 13px;
+  }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  padding-top: 100px;
+  row-gap: 100px;
+  @media (max-width: 764px) {
+    padding-top: 60px;
+    row-gap: 60px;
+  }
+}
+
+.item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 15px;
+  row-gap: 100px;
+  column-gap: 15px;
+  @media (max-width: 1024px) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  &:nth-child(4n - 2) {
+    flex: 0 0 25%;
+    max-width: 50%;
+    @media (max-width: 1024px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  &:nth-child(4n - 1) {
+    flex: 0 0 25%;
+    max-width: 25%;
+    @media (max-width: 1024px) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.client {
+  text-decoration: none;
+}
+

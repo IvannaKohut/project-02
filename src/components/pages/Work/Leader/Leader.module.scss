@@ -1,0 +1,32 @@
+.leader{
+  display: grid;
+  grid-template: 1fr/1fr 2fr;
+  padding: 50px 0 100px  0;
+}
+.text{
+  margin-top: 10px;
+  font-size: 117px;
+  font-weight: 400;
+  line-height: 117px;
+
+}
+.comeback{
+  font-family: var(--FontFamilyfontFamily-HelveticaNeue);
+  font-weight: 400;
+  line-height: 27.44px;
+  letter-spacing: -0.5px;
+  text-align: left;
+
+  display: block;
+  max-width: 226px;
+  margin: 15px 0 0 0;
+  font-size: 16px;
+  text-decoration: none;
+  color: #1E1E1E;
+  @media (max-width: 1124px) {
+    font-size: 16px;
+  }
+}
+.active{
+
+}

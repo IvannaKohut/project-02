@@ -1,0 +1,21 @@
+.appWrapper {
+    display: grid;
+    min-height: 100%;
+    grid-template:minmax(91px, auto) 1fr minmax(89px, auto)/1fr;
+    grid-template-areas:
+"header"
+"pages"
+"footer";
+
+}
+
+.container{
+    max-width: 1400px ;
+    padding: 0 25px;
+
+}
+
+.appWrapperContent {
+    grid-area: pages;
+
+}

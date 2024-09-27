@@ -9,6 +9,7 @@ import Mocechuk from "./components/pages/Mocechuk/Mocechuk";
 import Work from "./components/pages/Work/Work";
 import Client from "./components/pages/Work/Client/Client";
 import Contact from "./components/pages/Contact/Contact";
+import ExamplesForm from "./components/pages/Contact/ExamplesForm/ExamplesForm";
 
 
 const Wrapper = ({children}) => {
@@ -32,7 +33,7 @@ const App = (props) => {
                         <Route path="logo" element={<Mocechuk/>}/>
                         <Route path="aboutme" element={<AboutMe/>}/>
                         <Route path="blog" element={<Blog/>}/>
-                        <Route path="contacts" element={<Contact/>}/>
+                        <Route path="contacts" element={<ExamplesForm/>}/>
                         {/*<Route path="client" element={<Client/>}/>*/}
 
                     </Routes>
